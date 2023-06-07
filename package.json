@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/dlubin/react-demo/issues"
   },
-  "homepage": "https://github.com/dlubin/react-demo#readme"
+  "homepage": "https://github.com/dlubin/react-demo#readme",
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1"
+  }
 }

@@ -10,6 +10,7 @@ export default function Screenshots({
         setImage(image);
     }
 
+    // TODO render all images on page load without priority, so they are already loaded when you navigate between them
     return (
         <section>
             <div>
