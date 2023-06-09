@@ -1,4 +1,6 @@
-import items from '../../public/items';
+// ItemList - displays store items linked to their pages
+
+import items from '../public/items';
 import Image from 'next/image';
 import Link from 'next/link';
 

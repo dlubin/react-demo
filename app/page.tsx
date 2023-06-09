@@ -1,4 +1,4 @@
-import ItemList from "../components/itemList/itemList";
+import ItemList from "../components/itemList";
 import Banner from "./banner";
 import "bootstrap/dist/css/bootstrap.min.css";
 

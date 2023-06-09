@@ -1,3 +1,5 @@
+// Screenshots - displays images for a product
+
 import { useState } from 'react';
 import Image from 'next/image';
 

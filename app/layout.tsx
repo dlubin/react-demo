@@ -1,6 +1,7 @@
 import Header from '@/components/header'
 import './globals.scss'
 import { Inter } from 'next/font/google'
+import CartProvider from '@/components/cartProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,10 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}><Header />
-        <main className="min-h-screen pt-14 w-full text-slate-400">
-          {children}
-        </main>
+      <body className={inter.className}>
+        <CartProvider>
+          <Header />
+          <main className="min-h-screen pt-14 w-full text-slate-400">
+            {children}
+          </main>
+        </CartProvider>
       </body>
     </html>
   )

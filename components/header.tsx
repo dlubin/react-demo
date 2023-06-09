@@ -1,3 +1,5 @@
+// Header - the site's header, containing a logo and the cart
+
 import Cart from '@/public/icons/cart.svg';
 
 export default function Header() {

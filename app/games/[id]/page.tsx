@@ -1,16 +1,28 @@
 'use client';
 
-import Screenshots from '@/components/screenshots/screenshots';
+import Screenshots from '@/components/screenshots';
 import items from '@/public/items';
 import { useParams } from 'next/navigation';
 import Keyboard from '@/public/icons/keyboard.svg';
 import Controller from '@/public/icons/controller.svg';
 import { formatDate } from '@/util/helpers';
+import { useContext } from 'react';
+import { CartContext } from '@/components/cartProvider';
 
 export default function Game() {
     const params = useParams();
     const id = params.id;
     const game = items.games[id];
+
+    // We use context here to simplify a shared cart state across different pages and components
+    const { cart, setCart } = useContext(CartContext) as { cart: any, setCart: (cart: string[]) => void};
+
+    // When adding an item to the cart, push it to the context provider's state
+    function addToCart() {
+      if (!(cart as string[]).includes(id)) {
+        setCart([...cart, id]);
+      }
+    }
 
     return (
       <div className="mx-auto w-full max-w-[1640px] mt-14">
@@ -52,7 +64,7 @@ export default function Game() {
                 )
               }
             </div>
-            <button className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl">
+            <button className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl" onClick={addToCart}>
                 Add to cart
             </button>
           </section>
