@@ -24,7 +24,7 @@ export default function Screenshots({
             </div>
             <div className="flex flex-nowrap w-full mt-2 gap-x-2">
                 {screenshots.map((image, index) => (
-                    <div className="cursor-pointer" onClick={() => {handleClick(image.image)}}>
+                    <div key={index} className="cursor-pointer" onClick={() => {handleClick(image.image)}}>
                         <Image
                             src={image.thumbnail}
                             alt={`Image ${index + 1}`}
