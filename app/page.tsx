@@ -1,6 +1,5 @@
 import ItemList from "../components/itemList";
 import Banner from "./banner";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home() {
   return (

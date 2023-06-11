@@ -9,6 +9,9 @@ import { formatDate } from '@/util/helpers';
 import { useContext } from 'react';
 import { CartContext } from '@/components/cartProvider';
 
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+
 export default function Game() {
     const params = useParams();
     const id = params.id;
@@ -64,9 +67,11 @@ export default function Game() {
                 )
               }
             </div>
-            <button className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl" onClick={addToCart}>
-                Add to cart
-            </button>
+            <OverlayTrigger placement="bottom" overlay={<Tooltip id="Reminder">You won't actually be asked to buy anything or provide any info</Tooltip>}>
+              <button disabled={cart.includes(id)} className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl" onClick={addToCart}>
+                { cart.includes(id) ? 'Already in cart' : 'Add to cart' }
+              </button>
+            </OverlayTrigger>
           </section>
         </div>
       </div>
