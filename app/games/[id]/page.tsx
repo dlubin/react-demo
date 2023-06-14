@@ -6,11 +6,13 @@ import { useParams } from 'next/navigation';
 import Keyboard from '@/public/icons/keyboard.svg';
 import Controller from '@/public/icons/controller.svg';
 import { formatDate } from '@/util/helpers';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from '@/components/cartProvider';
 
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Toast from 'react-bootstrap/Toast';
+import { ToastContainer } from 'react-bootstrap';
 
 export default function Game() {
     const params = useParams();
@@ -19,11 +21,13 @@ export default function Game() {
 
     // We use context here to simplify a shared cart state across different pages and components
     const { cart, setCart } = useContext(CartContext) as { cart: any, setCart: (cart: string[]) => void};
+    const [showToast, setShowToast] = useState(false);
 
     // When adding an item to the cart, push it to the context provider's state
     function addToCart() {
       if (!(cart as string[]).includes(id)) {
         setCart([...cart, id]);
+        setShowToast(true);
       }
     }
 
@@ -67,13 +71,21 @@ export default function Game() {
                 )
               }
             </div>
-            <OverlayTrigger placement="bottom" overlay={<Tooltip id="Reminder">You won't actually be asked to buy anything or provide any info</Tooltip>}>
-              <button disabled={cart.includes(id)} className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl" onClick={addToCart}>
-                { cart.includes(id) ? 'Already in cart' : 'Add to cart' }
-              </button>
-            </OverlayTrigger>
+            <div className="flex flex-nowrap items-center gap-x-8">
+              <span className="text-xl">{ game.price ? `$${game.price}` : '' }</span>
+              <OverlayTrigger placement="bottom" overlay={<Tooltip id="Reminder">You won't actually be asked to buy anything or provide any info</Tooltip>}>
+                <button disabled={cart.includes(id)} className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl" onClick={addToCart}>
+                  { cart.includes(id) ? 'Already in cart' : 'Add to cart' }
+                </button>
+              </OverlayTrigger>
+            </div>
           </section>
         </div>
+        <ToastContainer position="bottom-center" className="position-fixed mb-8">
+          <Toast onClose={() => setShowToast(false)} show={showToast} delay={2500} autohide bg="success" className="!text-gray-950 !text-lg">
+            <Toast.Body>Added to Cart</Toast.Body>
+          </Toast>
+        </ToastContainer>
       </div>
     )
   }

@@ -21,7 +21,7 @@ export default {
             "controller": true,
             "players": "1",
             "release": "4/27/23",
-            "price": "70",
+            "price": "70.00",
             "developer": "Respawn Entertainment",
             "publisher": "EA",
             "description": "The story of Cal Kestis continues in Star Wars Jedi: Survivor™, a third-person galaxy-spanning action-adventure game from Respawn Entertainment and Lucasfilm Games." 
