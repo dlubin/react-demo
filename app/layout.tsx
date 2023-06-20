@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import CartProvider from '@/components/cartProvider'
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import WelcomeOverlay from '@/components/welcomeOverlay';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             {children}
           </main>
         </CartProvider>
+        <WelcomeOverlay></WelcomeOverlay>
       </body>
     </html>
   )

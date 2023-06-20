@@ -12,12 +12,12 @@ export default function Screenshots({
         setImage(index);
     }
 
-    // TODO render all images on page load without priority, so they are already loaded when you navigate between them
     return (
         <section>
             <div>
                 {screenshots.map((image, index) => (
                 <Image
+                    key={index}
                     src={image.image}
                     alt="Gameplay image"
                     width={1080}
