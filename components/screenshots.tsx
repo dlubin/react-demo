@@ -6,27 +6,30 @@ import Image from 'next/image';
 export default function Screenshots({
     screenshots
 }) {
-    const [currentImage, setImage] = useState(screenshots.length > 0 ? screenshots[0].image : '');
+    const [currentImage, setImage] = useState(0);
 
-    function handleClick(image) {
-        setImage(image);
+    function handleClick(index) {
+        setImage(index);
     }
 
     // TODO render all images on page load without priority, so they are already loaded when you navigate between them
     return (
         <section>
             <div>
+                {screenshots.map((image, index) => (
                 <Image
-                    src={currentImage}
+                    src={image.image}
                     alt="Gameplay image"
                     width={1080}
                     height={720}
+                    className={index !== currentImage ? 'hidden' : ''}
                     priority
                 /> 
+                ))}
             </div>
             <div className="flex flex-nowrap w-full mt-2 gap-x-2">
                 {screenshots.map((image, index) => (
-                    <div key={index} className="cursor-pointer" onClick={() => {handleClick(image.image)}}>
+                    <div key={index} className="cursor-pointer" onClick={() => {handleClick(index)}}>
                         <Image
                             src={image.thumbnail}
                             alt={`Image ${index + 1}`}

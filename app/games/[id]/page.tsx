@@ -72,7 +72,10 @@ export default function Game() {
               }
             </div>
             <div className="flex flex-nowrap items-center gap-x-8">
-              <span className="text-xl">{ game.price ? `$${game.price}` : '' }</span>
+              <div className="text-xl flex flex-col flex-nowrap">
+                { game.discountPercent && (<span className="text-green-600">%{game.discountPercent} off</span>)}
+                <span>{ game.price ? `$${game.price}` : '' }</span>
+              </div>
               <OverlayTrigger placement="bottom" overlay={<Tooltip id="Reminder">You won't actually be asked to buy anything or provide any info</Tooltip>}>
                 <button disabled={cart.includes(id)} className="w-fit rounded bg-gray-950 border border-slate-400 px-8 py-4 text-xl" onClick={addToCart}>
                   { cart.includes(id) ? 'Already in cart' : 'Add to cart' }
