@@ -19,7 +19,7 @@ export default function Header() {
     <header className="fixed z-50 top-0 w-full bg-gray-950 text-slate-400 fill-slate-400 border-b border-slate-400">
       <div className="h-14 grid grid-cols-[repeat(10,_1fr)] items-center max-w-[1640px] mx-auto">
         <Link
-          href="/"
+          href={{ pathname: "/" }}
           className="flex flex-nowrap items-center gap-x-2 text-lg no-underline text-slate-400 hover:text-slate-400"
           prefetch={false}
         >

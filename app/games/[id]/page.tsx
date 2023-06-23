@@ -1,5 +1,5 @@
 import items from "@/public/items";
-import Game from '@/components/game';
+import Game from "@/components/game";
 
 // Because this will be rendered as static content, we must tell Next.js what pages to render
 export async function generateStaticParams() {
@@ -15,7 +15,5 @@ export default function GamePage({ params }) {
 
   if (!game) return null;
 
-  return (
-    <Game game={game} id={id}></Game>
-  );
+  return <Game game={game} id={id}></Game>;
 }

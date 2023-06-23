@@ -14,8 +14,7 @@ import Toast from "react-bootstrap/Toast";
 import { ToastContainer } from "react-bootstrap";
 
 export default function Game({ game, id }) {
-
-    // We use context here to simplify a shared cart state across different pages and components
+  // We use context here to simplify a shared cart state across different pages and components
   const { cart, setCart } = useContext(CartContext) as {
     cart: any;
     setCart: (cart: string[]) => void;
@@ -30,8 +29,8 @@ export default function Game({ game, id }) {
     }
   }
 
-    return (
-        <div className="mx-auto w-full max-w-[1640px] mt-14">
+  return (
+    <div className="mx-auto w-full max-w-[1640px] mt-14">
       <h1 className="mb-4">{game.title}</h1>
       <div className="flex flex-nowrap gap-x-4">
         <div className="min-w-[1080px]">
@@ -92,5 +91,5 @@ export default function Game({ game, id }) {
         </Toast>
       </ToastContainer>
     </div>
-    );
+  );
 }
