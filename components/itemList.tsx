@@ -13,7 +13,7 @@ export default function ItemList({ header, category }) {
           {items[category].map((id, index) => (
             <Link
               key={index}
-              href={`/games/${id}`}
+              href='/games/[id]' as={`/games/${id}`}
               className="no-underline text-slate-400 hover:text-slate-500 transition-colors transition-ease-in"
               prefetch={false}
             >
