@@ -67,8 +67,8 @@ export default function Game() {
               placement="bottom"
               overlay={
                 <Tooltip id="Reminder">
-                  You won&apos;t actually be asked to buy anything or provide any
-                  info
+                  You won&apos;t actually be asked to buy anything or provide
+                  any info
                 </Tooltip>
               }
             >

@@ -11,7 +11,8 @@ export default function ItemList({ header, category }) {
       {items[category].length > 0 && (
         <div className="flex gap-x-8">
           {items[category].map((id, index) => (
-            <Link key={index}
+            <Link
+              key={index}
               href={`/games/${id}`}
               className="no-underline text-slate-400 hover:text-slate-500 transition-colors transition-ease-in"
             >
