@@ -2,7 +2,6 @@
 
 import Screenshots from "@/components/screenshots";
 import items from "@/public/items";
-import { useParams } from "next/navigation";
 import Keyboard from "@/public/icons/keyboard.svg";
 import Controller from "@/public/icons/controller.svg";
 import { formatDate } from "@/util/helpers";
@@ -14,9 +13,16 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Toast from "react-bootstrap/Toast";
 import { ToastContainer } from "react-bootstrap";
 
-export default function Game() {
-  const params = useParams();
-  const id = params.id;
+// Because this will be rendered as static content, we must tell Next.js what pages to render
+export async function generateStaticParams() {
+  const ids = Object.keys(items.games);
+  return ids.map((id) => ({
+    id
+  }));
+}
+
+export default function Game({ params }) {
+  const { id } = params;
   const game = items.games[id];
 
   // We use context here to simplify a shared cart state across different pages and components
@@ -33,6 +39,8 @@ export default function Game() {
       setShowToast(true);
     }
   }
+
+  if (!game) return null;
 
   return (
     <div className="mx-auto w-full max-w-[1640px] mt-14">

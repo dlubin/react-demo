@@ -79,10 +79,6 @@ export default {
             "publisher": "Red Hook Studios",
             "description": "Darkest Dungeon II is a roguelike road trip of the damned. Form a party, equip your stagecoach, and set off across the decaying landscape on a last gasp quest to avert the apocalypse. The greatest dangers you face, however, may come from within..." 
         },
-        10013: {
-            "title": "Layers of Fear",
-            "path": "/images/10013/item-list.avif"
-        }
     },
     "new":[
         10010, 10012
