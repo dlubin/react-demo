@@ -1,7 +1,7 @@
 "use client";
 
 import Screenshots from "@/components/screenshots";
-import items from "@/public/items";
+import items from "../../../public/items";
 import Keyboard from "@/public/icons/keyboard.svg";
 import Controller from "@/public/icons/controller.svg";
 import { formatDate } from "@/util/helpers";
