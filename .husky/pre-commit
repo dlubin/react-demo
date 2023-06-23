@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-npm run lint && npx prettier -w .
+npm run lint && npx prettier -w . && git add .
