@@ -17,7 +17,7 @@ import { ToastContainer } from "react-bootstrap";
 export async function generateStaticParams() {
   const ids = Object.keys(items.games);
   return ids.map((id) => ({
-    id
+    id,
   }));
 }
 
