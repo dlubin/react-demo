@@ -3,5 +3,6 @@
 **/.git
 **/public
 **/.next
+**/out
 README.md
 LICENSE
