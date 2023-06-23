@@ -31,7 +31,7 @@ export default function Header() {
           className="flex items-center gap-x-2 no-underline col-start-9"
         >
           <Image
-            src="/icons/github-mark.png"
+            src="/react-demo/icons/github-mark.png"
             alt="Github Logo"
             width={36}
             height={36}
