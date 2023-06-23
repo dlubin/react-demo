@@ -1,5 +1,6 @@
 import items from "@/public/items";
 import Game from "@/components/game";
+import Header from "@/components/header";
 
 // Because this will be rendered as static content, we must tell Next.js what pages to render
 export async function generateStaticParams() {
@@ -15,5 +16,12 @@ export default function GamePage({ params }) {
 
   if (!game) return null;
 
-  return <Game game={game} id={id}></Game>;
+  return (
+    <section>
+      <Header />
+      <main className="min-h-screen pt-14 w-full text-slate-400">
+        <Game game={game} id={id}></Game>
+      </main>
+    </section>
+  );
 }

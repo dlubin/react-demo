@@ -1,4 +1,3 @@
-import Header from "@/components/header";
 import "./globals.scss";
 import { Inter } from "next/font/google";
 import CartProvider from "@/components/cartProvider";
@@ -21,12 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <CartProvider>
-          <Header />
-          <main className="min-h-screen pt-14 w-full text-slate-400">
-            {children}
-          </main>
-        </CartProvider>
+        <CartProvider>{children}</CartProvider>
         <WelcomeOverlay></WelcomeOverlay>
       </body>
     </html>
