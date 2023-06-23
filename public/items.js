@@ -1,6 +1,6 @@
 export default {
     "games": {
-        10010: {
+        "10010": {
             "title": "Star Wars Jedi Survivor",
             "path": "/react-demo/images/10010/item-list.avif",
             "screenshots": [
@@ -26,7 +26,7 @@ export default {
             "publisher": "EA",
             "description": "The story of Cal Kestis continues in Star Wars Jedi: Survivor™, a third-person galaxy-spanning action-adventure game from Respawn Entertainment and Lucasfilm Games." 
         },
-        10011: {
+        "10011": {
             "title": "Redfall",
             "path": "/react-demo/images/10011/item-list.avif",
             "screenshots": [
@@ -53,7 +53,7 @@ export default {
             "publisher": "Bethesda Softworks",
             "description": "The town of Redfall is under siege by a legion of vampires who have cut the island off from the outside world. Trapped with a handful of survivors, slay alone or squad up in open-world FPS action." 
         },
-        10012: {
+        "10012": {
             "title": "Darkest Dungeon 2",
             "path": "/react-demo/images/10012/item-list.webp",
             "screenshots": [
