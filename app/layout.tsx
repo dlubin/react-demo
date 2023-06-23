@@ -1,22 +1,22 @@
-import Header from '@/components/header'
-import './globals.scss'
-import { Inter } from 'next/font/google'
-import CartProvider from '@/components/cartProvider'
+import Header from "@/components/header";
+import "./globals.scss";
+import { Inter } from "next/font/google";
+import CartProvider from "@/components/cartProvider";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import WelcomeOverlay from '@/components/welcomeOverlay';
+import WelcomeOverlay from "@/components/welcomeOverlay";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'React Games -  A Demo Site',
-  description: 'A pretend video game store made in React',
-}
+  title: "React Games -  A Demo Site",
+  description: "A pretend video game store made in React",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -30,5 +30,5 @@ export default function RootLayout({
         <WelcomeOverlay></WelcomeOverlay>
       </body>
     </html>
-  )
+  );
 }
