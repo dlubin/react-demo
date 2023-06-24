@@ -13,9 +13,6 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: "/react-demo",
-  experimental: {
-    appDir: true,
-  },
 };
 
 module.exports = nextConfig;
