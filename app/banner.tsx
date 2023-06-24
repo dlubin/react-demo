@@ -8,7 +8,7 @@ export default function Banner() {
       <Carousel interval={2000}>
         <Carousel.Item>
           <Image
-            src="/reactdemo/banner1.jpg"
+            src="/react-demo/banner1.jpg"
             alt="Banner"
             width={875.214}
             height={480}
@@ -18,7 +18,7 @@ export default function Banner() {
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            src="/reactdemo/banner2.jpg"
+            src="/react-demo/banner2.jpg"
             alt="Banner"
             width={853.333}
             height={480}
@@ -28,7 +28,7 @@ export default function Banner() {
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            src="/reactdemo/banner3.jpg"
+            src="/react-demo/banner3.jpg"
             alt="Banner"
             width={853.333}
             height={480}

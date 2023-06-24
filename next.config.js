@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/reactdemo",
+  basePath: "/react-demo",
 };
 
 module.exports = nextConfig;

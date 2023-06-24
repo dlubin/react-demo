@@ -2,19 +2,19 @@ export default {
     "games": {
         "10010": {
             "title": "Star Wars Jedi Survivor",
-            "path": "/reactdemo/images/10010/item-list.avif",
+            "path": "/react-demo/images/10010/item-list.avif",
             "screenshots": [
                 {
-                    "image" : "/reactdemo/images/10010/screenshots/image1.jpg",
-                    "thumbnail" : "/reactdemo/images/10010/screenshots/thumbnail1.avif"
+                    "image" : "/react-demo/images/10010/screenshots/image1.jpg",
+                    "thumbnail" : "/react-demo/images/10010/screenshots/thumbnail1.avif"
                 },
                 {
-                    "image" : "/reactdemo/images/10010/screenshots/image2.jpg",
-                    "thumbnail" : "/reactdemo/images/10010/screenshots/thumbnail2.avif"
+                    "image" : "/react-demo/images/10010/screenshots/image2.jpg",
+                    "thumbnail" : "/react-demo/images/10010/screenshots/thumbnail2.avif"
                 },
                 {
-                    "image" : "/reactdemo/images/10010/screenshots/image3.jpg",
-                    "thumbnail" : "/reactdemo/images/10010/screenshots/thumbnail3.avif"
+                    "image" : "/react-demo/images/10010/screenshots/image3.jpg",
+                    "thumbnail" : "/react-demo/images/10010/screenshots/thumbnail3.avif"
                 },
 
             ],
@@ -28,19 +28,19 @@ export default {
         },
         "10011": {
             "title": "Redfall",
-            "path": "/reactdemo/images/10011/item-list.avif",
+            "path": "/react-demo/images/10011/item-list.avif",
             "screenshots": [
                 {
-                    "image" : "/reactdemo/images/10011/screenshots/image1.jpg",
-                    "thumbnail" : "/reactdemo/images/10011/screenshots/thumbnail1.avif"
+                    "image" : "/react-demo/images/10011/screenshots/image1.jpg",
+                    "thumbnail" : "/react-demo/images/10011/screenshots/thumbnail1.avif"
                 },
                 {
-                    "image" : "/reactdemo/images/10011/screenshots/image2.jpg",
-                    "thumbnail" : "/reactdemo/images/10011/screenshots/thumbnail2.avif"
+                    "image" : "/react-demo/images/10011/screenshots/image2.jpg",
+                    "thumbnail" : "/react-demo/images/10011/screenshots/thumbnail2.avif"
                 },
                 {
-                    "image" : "/reactdemo/images/10011/screenshots/image3.jpg",
-                    "thumbnail" : "/reactdemo/images/10011/screenshots/thumbnail3.avif"
+                    "image" : "/react-demo/images/10011/screenshots/image3.jpg",
+                    "thumbnail" : "/react-demo/images/10011/screenshots/thumbnail3.avif"
                 },
 
             ],
@@ -55,19 +55,19 @@ export default {
         },
         "10012": {
             "title": "Darkest Dungeon 2",
-            "path": "/reactdemo/images/10012/item-list.webp",
+            "path": "/react-demo/images/10012/item-list.webp",
             "screenshots": [
                 {
-                    "image" : "/reactdemo/images/10012/screenshots/image1.jpg",
-                    "thumbnail" : "/reactdemo/images/10012/screenshots/thumbnail1.avif"
+                    "image" : "/react-demo/images/10012/screenshots/image1.jpg",
+                    "thumbnail" : "/react-demo/images/10012/screenshots/thumbnail1.avif"
                 },
                 {
-                    "image" : "/reactdemo/images/10012/screenshots/image2.jpg",
-                    "thumbnail" : "/reactdemo/images/10012/screenshots/thumbnail2.avif"
+                    "image" : "/react-demo/images/10012/screenshots/image2.jpg",
+                    "thumbnail" : "/react-demo/images/10012/screenshots/thumbnail2.avif"
                 },
                 {
-                    "image" : "/reactdemo/images/10012/screenshots/image3.jpg",
-                    "thumbnail" : "/reactdemo/images/10012/screenshots/thumbnail3.avif"
+                    "image" : "/react-demo/images/10012/screenshots/image3.jpg",
+                    "thumbnail" : "/react-demo/images/10012/screenshots/thumbnail3.avif"
                 },
 
             ],
