@@ -4,7 +4,7 @@ import Logo from "@/public/icons/cyclone.svg";
 export default function SiteLogo() {
   return (
     <Link
-      href="/////"
+      href="//"
       className="flex flex-nowrap items-center gap-x-2 text-lg no-underline text-slate-400 hover:text-slate-400"
       prefetch={false}
     >
