@@ -1,12 +1,11 @@
 "use client";
 
 import Screenshots from "@/components/screenshots";
-import items from "../public/items";
 import Keyboard from "@/public/icons/keyboard.svg";
 import Controller from "@/public/icons/controller.svg";
 import { formatDate } from "@/util/helpers";
 import { useContext, useState } from "react";
-import { CartContext } from "@/components/cartProvider";
+import { CartContext } from "@/components/cart/cartProvider";
 
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";

@@ -3,7 +3,7 @@
 
 import React, { useContext, useState } from "react";
 import { CartContext } from "./cartProvider";
-import items from "../public/items";
+import items from "../../public/items";
 import { Toast, ToastContainer } from "react-bootstrap";
 
 export default function Cart() {

@@ -1,6 +1,6 @@
 import "./globals.scss";
 import { Inter } from "next/font/google";
-import CartProvider from "@/components/cartProvider";
+import CartProvider from "@/components/cart/cartProvider";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import WelcomeOverlay from "@/components/welcomeOverlay";
