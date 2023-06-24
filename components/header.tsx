@@ -18,12 +18,12 @@ export default function Header() {
           <span>React Games</span>
         </Link>
         <a
-          href="https://github.com/dlubin/react-demo"
+          href="https://github.com/dlubin/reactdemo"
           target="_blank"
           className="flex items-center gap-x-2 no-underline col-start-9"
         >
           <Image
-            src="/react-demo/icons/github-mark.png"
+            src="/reactdemo/icons/github-mark.png"
             alt="Github Logo"
             width={36}
             height={36}

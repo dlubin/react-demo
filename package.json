@@ -1,5 +1,5 @@
 {
-  "name": "react-demo",
+  "name": "reactdemo",
   "version": "0.1.0",
   "description": "A pretend video game store made in React",
   "private": true,
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dlubin/react-demo.git"
+    "url": "git+https://github.com/dlubin/reactdemo.git"
   },
   "dependencies": {
     "@types/node": "20.1.0",
@@ -34,9 +34,9 @@
   "author": "David Lubin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dlubin/react-demo/issues"
+    "url": "https://github.com/dlubin/reactdemo/issues"
   },
-  "homepage": "https://github.com/dlubin/react-demo#readme",
+  "homepage": "https://github.com/dlubin/reactdemo#readme",
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
     "husky": "^8.0.0",
